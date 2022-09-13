@@ -1,0 +1,23 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    grid-template-areas: 
+        "a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+
+.container > img {
+    max-width: 100%;
+}
+
+.container > img:nth-child(6) {
+    grid-area: f/f/k/k
+}
